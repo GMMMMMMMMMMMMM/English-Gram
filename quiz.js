@@ -11,7 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
             quizContainer.innerHTML = `
                 <h2>${rule.rule}</h2>
                 <p>${rule.explanation}</p>
-                <p><strong>Example:</strong> ${rule.example}</p>
+                <p>${rule.construction}</p>
+                <p class="example"><strong>Example:</strong> ${rule.example.replace(/\[(.*?)\/(.*?)\/(.*?)\]/g, '<strong>$1</strong>/<strong>$2</strong>/<strong>$3</strong>')}</p>
                 <div class="options">
                     ${rule.options.map((option, index) => `
                         <button class="option" data-correct="${option.correct}">${option.text}</button>

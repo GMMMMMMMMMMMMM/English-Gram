@@ -20,11 +20,31 @@ h1 {
     margin-bottom: 20px;
 }
 
-button {
+h2 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 5px 0;
+}
+
+.example {
+    font-style: italic;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #eef;
+    border-radius: 5px;
+}
+
+.options {
+    margin-top: 20px;
+}
+
+.option {
     display: block;
     width: 100%;
     padding: 10px;
-    margin: 5px 0;
+    margin: 10px 0;
     border: none;
     border-radius: 5px;
     background-color: #007bff;
@@ -34,7 +54,7 @@ button {
     transition: background-color 0.3s;
 }
 
-button:hover {
+.option:hover {
     background-color: #0056b3;
 }
 
@@ -46,14 +66,25 @@ button.incorrect {
     background-color: #dc3545;
 }
 
-#result-container {
-    text-align: center;
-}
-
-#explanations h3 {
+.feedback {
     margin-top: 20px;
+    font-weight: bold;
 }
 
-#explanations p {
-    margin: 5px 0;
+.next-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.next-button:disabled {
+    background-color: #c0c0c0;
 }
